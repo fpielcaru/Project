@@ -1,0 +1,28 @@
+api_settings:
+  finnhub:
+    api_key: "d51000pr01qplo899gv0d51000pr01qplo899gvg"     
+    rate_limit: 60
+  
+  polygon:
+    api_key: "goNqwwO5xvT2HabrQ3guL8od5XTlbJMS" 
+    rate_limit: 5
+
+data_collection:
+  pre_open_minutes: 15
+  post_open_minutes: 15
+  update_interval_seconds: 30  
+  
+  sessions:
+    NYSE: "09:30"
+    NASDAQ: "09:30"
+    FOREX: "00:00"
+    CRYPTO: "00:00"
+
+database:
+  path: "./data/trading_data.db"
+  backup_interval_hours: 24
+
+logging:
+  level: "INFO"
+  file_path: "./logs/volume_monitor.log"
+  max_size_mb: 10
